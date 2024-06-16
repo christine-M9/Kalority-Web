@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Home = () => (
@@ -8,16 +9,26 @@ const Home = () => (
         <p>Where innovation meets excellence in software-driven solutions...</p>
       </div>
     </header>
-    <section className="features">
+    <section className="overview">
       <div className="container">
-        <h2>Features</h2>
-        <ul>
-          <li>Software Development</li>
-          <li>Investment Ventures</li>
-          <li>VSLA Partners</li>
-          <li>Furniture Business</li>
-          <li>Agriculture Projects</li>
-        </ul>
+        <h2>About Us</h2>
+        <p>
+          Welcome to Kalority, where innovation meets excellence in software-driven solutions. 
+          We specialize in crafting and maintaining bespoke software applications tailored to 
+          your unique needs. Our team is dedicated to pushing the boundaries of technology to 
+          drive your business forward in the digital landscape.
+        </p>
+      </div>
+    </section>
+    <section className="commitment">
+      <div className="container">
+        <h2>Our Commitment</h2>
+        <p>
+          At Kalority, we're driven by a shared commitment to excellence, innovation, and social 
+          responsibility. Our mission is to create lasting value for our clients, partners, and 
+          communities. Get in touch with us today to discover how Kalority can help you thrive in 
+          the digital age.
+        </p>
       </div>
     </section>
   </div>

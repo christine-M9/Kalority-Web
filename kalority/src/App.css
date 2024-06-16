@@ -2,19 +2,17 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  /* background-color: #9f51b9;  */
   color: #f1eaf5; /* Dark text color */
-  background-image: url('./components/images/R\ \(4\).jpeg');
+  background-image: url('./components/images/R (4).jpeg');
   background-size: cover; /* Cover entire viewport */
   background-repeat: no-repeat; /* No repeating of background image */
-  background-position: center center; /* Center the background image */
-  background-attachment: fixed; 
-  
-  
+  background-position: center top 50px; /* Center horizontally and start background 100px down from the top */
+  /* background-attachment: fixed;  */
 }
 
+
 .navbar {
-  color: rgb(235, 223, 223);
+  color: rgb(26, 25, 25);
   padding: 1rem 0;
 }
 
@@ -27,11 +25,17 @@ body {
   /* color: #f1eaf5; */
 }
 
+
 .navbar .navbar-brand {
-  color: rgb(244, 237, 237);
-  font-size: 1.5rem;
+  color: rgb(41, 37, 37); 
+  font-size: 2rem; 
   text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 1px; 
+  text-transform: uppercase; 
+  font-weight: bold; 
 }
+
 
 .navbar-nav {
   display: flex;
@@ -45,7 +49,7 @@ body {
 }
 
 .navbar-nav li a {
-  color: rgb(231, 224, 224);
+  color: rgb(20, 17, 17);
   text-decoration: none;
   font-size: 1rem;
 }

@@ -1,32 +1,43 @@
-/* src/App.css */
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333; /* Dark text color */
-  background-color: #f9f9f9; /* Light gray background */
+  /* background-color: #9f51b9;  */
+  color: #f1eaf5; /* Dark text color */
+  background-image: url('./components/images/R\ \(4\).jpeg');
+  background-size: cover; /* Cover entire viewport */
+  background-repeat: no-repeat; /* No repeating of background image */
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed; 
+  
+  
 }
 
 .navbar {
-  background-color: #6f42c1; /* Purple navbar */
-  color: white;
-  padding: 1rem;
+  color: rgb(235, 223, 223);
+  padding: 1rem 0;
+}
+
+
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* color: #f1eaf5; */
 }
 
 .navbar .navbar-brand {
-  color: white;
+  color: rgb(244, 237, 237);
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 .navbar-nav {
-  list-style: none;
   display: flex;
-  padding: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .navbar-nav li {
@@ -34,25 +45,33 @@ body {
 }
 
 .navbar-nav li a {
-  color: white;
+  color: rgb(231, 224, 224);
   text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-nav li a:hover {
+  text-decoration: underline;
 }
 
 .header {
-  background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+  /* background: url('https://via.placeholder.com/1920x1080') no-repeat center center; */
   background-size: cover;
-  color: white;
-  text-align: center;
+  color: rgb(246, 238, 238);
+  text-align: 10rem;
   padding: 10rem 1rem;
+  max-width: 500px; /* Limit header width */
+ 
+ 
 }
 
-.overview, .commitment {
+.section {
   background-color: white; /* White background for sections */
   padding: 4rem 0;
   text-align: center;
 }
 
-.overview h2, .commitment h2 {
+.section h2 {
   font-size: 2.5rem; /* Larger heading size */
   color: #333; /* Dark heading color */
 }
@@ -64,7 +83,7 @@ body {
 }
 
 p {
-  color: #666;
+  color: #faf4f4;
   line-height: 1.6;
 }
 
@@ -78,5 +97,14 @@ button {
 }
 
 button:hover {
-  background-color: #5a32a3; /* Darker purple on hover */
+  background-color: #cb1ed7; /* Darker purple on hover */
+  text-decoration: none;
 }
+.com {
+  max-width: 500px; 
+  padding: 0rem;
+  text-align: right;
+  margin-left: 20rem;
+
+}
+

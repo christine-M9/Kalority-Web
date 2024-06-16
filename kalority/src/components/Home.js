@@ -6,22 +6,15 @@ const Home = () => (
     <header className="header">
       <div className="container">
         <h1>Welcome to Kalority</h1>
-        <p>Where innovation meets excellence in software-driven solutions...</p>
+        <p>Welcome to Kalority, where innovation meets excellence in software-driven solutions. We
+specialize in crafting and maintaining bespoke software applications tailored to your unique
+needs. Our team is dedicated to pushing the boundaries of technology to drive your business
+forward in the digital landscape.</p>
       </div>
     </header>
-    <section className="overview">
-      <div className="container">
-        <h2>About Us</h2>
-        <p>
-          Welcome to Kalority, where innovation meets excellence in software-driven solutions. 
-          We specialize in crafting and maintaining bespoke software applications tailored to 
-          your unique needs. Our team is dedicated to pushing the boundaries of technology to 
-          drive your business forward in the digital landscape.
-        </p>
-      </div>
-    </section>
+ 
     <section className="commitment">
-      <div className="container">
+      <div className="com">
         <h2>Our Commitment</h2>
         <p>
           At Kalority, we're driven by a shared commitment to excellence, innovation, and social 

@@ -110,7 +110,7 @@ body {
   font-size: 1rem; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   margin-top: 10px; /* Top margin */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 15px; /* Rounded corners */
 }
 
 .multi-color-button:hover {

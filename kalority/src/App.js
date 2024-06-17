@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home'; // Assuming you have a Home component
-import Details from './components/Details'; // Assuming you have a Details component
-import SuccessStories from './components/SuccessStories'; // Assuming you have a SuccessStories component
-import Features from './components/Features'; // Assuming you have a Features component
-import Contact from './components/ContactPage'; // Assuming you have a Contact component
-import Team from './components/TeamSection'; // Assuming you have a Team component
+import Home from './components/Home'; 
+import Details from './components/Details'; 
+import SuccessStories from './components/SuccessStories'; 
+import Features from './components/Features'; 
+import Contact from './components/ContactPage'; 
+import Team from './components/TeamSection'; 
 import './App.css';
 
 const App = () => {

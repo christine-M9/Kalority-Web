@@ -98,3 +98,21 @@ body {
   display: block;
   border-radius: 50%;
 }
+/* App.css */
+
+/* App.css */
+
+.multi-color-button {
+  background: linear-gradient(to right, #6f42c1  , #007bff 50%, #6f42c1 50%, #007bff); /* Gradient colors */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around text */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Top margin */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.multi-color-button:hover {
+  background: linear-gradient(to right, #0056b3, #0056b3 70%, #5a3ec8 30%, #5a3ec8); /* Darker gradient on hover */
+}

@@ -16,6 +16,7 @@ const Home = () => {
             dedicated to pushing the boundaries of technology to drive your business forward in the
             digital landscape.
           </p>
+          <button className="multi-color-button">Discover</button>
         </div>
       </div>
       <div className="image-container">

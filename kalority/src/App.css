@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f1eaf5; /* Dark text color */
-  background-image: url('./components/images/R (4).jpeg');
+  background-image: url('./components/images/R\ \(4\).jpeg');
   background-size: cover; /* Cover entire viewport */
   background-repeat: no-repeat; /* No repeating of background image */
   background-position: center top 50px; /* Center horizontally and start background 100px down from the top */

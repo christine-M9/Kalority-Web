@@ -1,12 +1,76 @@
+
+/* Default styles for all pages */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Specify a fallback font-family */
+  background-color: #f0f0f0; /* Default background color */
+}
+
+/* Specific styles for the home page with background image */
+.home-background {
+  /* Background styles */
+  background-image: url('./components/images/360_F_507989418_Haiga5mGaKXOLW8ss2m61EZry5cFmY2x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
 .home-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Full viewport height */
+  /* Default background for all pages */
+  background-color: #f0f0f0;
 }
 
 .home-container h1 {
   font-size: 3rem;
   text-align: center;
-  color: #333; 
+  color: #fff; /* Text color for the home page */
+}
+
+/* Styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Align items at the ends */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding around navbar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; /* Remove background color */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.company-name {
+  text-decoration: none;
+  color: #fff; /* Link text color */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff; /* Link text color */
+  padding: 10px 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  text-decoration: underline; /* Underline on hover or active */
 }

@@ -1,27 +1,24 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
 import Home from './components/Home';
-import Details from './components/Details';
-import Contact from './components/Contact';
-import Team from './components/Team';
-import SuccessStories from './components/SuccessStories';
+import ContactPage from './components/ContactPage';
 import './App.css';
 
-const App = () => (
-  <Router>
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/success-stories" element={<SuccessStories />} />
-      </Routes>
-    </div>
-  </Router>
-);
+const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
+          {/* Add more routes as needed for other sections */}
+        </Routes>
+      </div>
+    </Router>
+  );
+}
 
 export default App;

@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/Cartoon-illustration-website-building-vector.jpg" // Path relative to public directory
+          src="/images/pngtree-business-man-with-laptop-cartoon-vector-illustration-length-computer-smart-photo-picture-image_8259441.jpg" // Path relative to public directory
           alt="Illustration"
           className="illustration"
         />

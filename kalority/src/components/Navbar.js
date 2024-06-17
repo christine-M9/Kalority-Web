@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'; 
 
 const Navbar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -42,6 +48,34 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+
+      <div className="navbar-right">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <NavLink to="/signin" className="nav-link">
+              Sign In
+            </NavLink>
+          </li>
+          <li className="nav-item dropdown">
+            <button className="nav-link dropdown-toggle" onClick={toggleDropdown}>
+              Language
+            </button>
+            {dropdownOpen && (
+              <div className="dropdown-menu">
+                <NavLink to="/language/english" className="dropdown-item">
+                  English
+                </NavLink>
+                <NavLink to="/language/spanish" className="dropdown-item">
+                  Spanish
+                </NavLink>
+                <NavLink to="/language/german" className="dropdown-item">
+                  German
+                </NavLink>
+              </div>
+            )}
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

@@ -1,34 +1,4 @@
 
-/* Default styles for all pages */
-body {
-  margin: 0; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Specify a fallback font-family */
-  background-color: #f0f0f0; /* Default background color */
-}
-
-/* Specific styles for the home page with background image */
-.home-background {
-  /* Background styles */
-  background-image: url('./components/images/360_F_507989418_Haiga5mGaKXOLW8ss2m61EZry5cFmY2x.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-}
-
-.home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Full viewport height */
-  /* Default background for all pages */
-  background-color: #f0f0f0;
-}
-
-.home-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: #fff; /* Text color for the home page */
-}
 
 /* Styles for the navbar */
 .navbar {
@@ -50,8 +20,11 @@ body {
 
 .company-name {
   text-decoration: none;
-  color: #fff; /* Link text color */
-  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #282626; /* Link text color */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 .navbar-nav {
@@ -66,11 +39,51 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #fff; /* Link text color */
+  color: rgb(48, 44, 44); /* Link text color */
   padding: 10px 15px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-link:hover,
 .nav-link.active {
   text-decoration: underline; /* Underline on hover or active */
 }
+/* Default styles for all pages */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Specify a fallback font-family */
+  background-color: #f0f0f0; /* Default background color */
+}
+
+/* Additional styles for the home page background */
+.home-container {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.content-wrapper {
+  max-width: 500px;
+  text-align: left; /* Align content to the left */
+}
+
+.home-container h2 {
+  font-size: 5.5rem;
+  color: #5e5959;
+  font-family: monospace; /* Specify font family */
+  margin-bottom: 20px; /* Add margin between h2 and p */
+  font-weight: normal;
+}
+
+.additional-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+  text-align: left; /* Align paragraphs to the left */
+}
+

@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/images (2).jpeg" // Path relative to public directory
+          src="/images/Cartoon-illustration-website-building-vector.jpg" // Path relative to public directory
           alt="Illustration"
           className="illustration"
         />

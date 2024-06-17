@@ -1,87 +1,12 @@
-/* Header Styles */
-.header {
-  background-color: #292929;
-  color: #fff;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.nav {
+.home-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.logo img {
-  max-width: 120px;
-}
-
-.menu {
-  list-style-type: none;
-  display: flex;
-}
-
-.menu-item {
-  margin-right: 20px;
-}
-
-.menu-item a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.menu-item a:hover {
-  color: #f44336;
-}
-/* App.css */
-.section {
-  padding: 80px 0;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.intro, .commitment {
+.home-container h1 {
+  font-size: 3rem;
   text-align: center;
-  margin-bottom: 60px;
+  color: #333; 
 }
-
-.intro h1, .commitment h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.intro p, .commitment p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .intro h1, .commitment h2 {
-    font-size: 2rem;
-  }
-
-  .intro p, .commitment p {
-    font-size: 1rem;
-  }
-}
-

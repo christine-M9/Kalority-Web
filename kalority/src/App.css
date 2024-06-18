@@ -112,14 +112,9 @@ body {
 .multi-color-button:hover {
   background: linear-gradient(to right, #0056b3,  #5a3ec8 50%,  #0056b3 50%, #5a3ec8); /* Darker gradient on hover */
 }
+/* Features Component Styles */
 .features-container {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-/* Styles for the features component */
-.features-container {
-  padding: 20px;
+  padding: 90px;
   background-color: #ffffff;
 }
 
@@ -134,20 +129,35 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  grid-auto-flow: dense; /* Enable dense packing */
 }
 
 .feature-card {
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card .feature-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.feature-card .feature-content {
+  padding: 15px 0;
 }
 
 .feature-card h2 {
@@ -161,6 +171,8 @@ body {
   line-height: 1.5;
   color: #555;
 }
+
+
 /* Contact Page Styles */
 .contact-container {
   display: flex;

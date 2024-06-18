@@ -112,3 +112,52 @@ body {
 .multi-color-button:hover {
   background: linear-gradient(to right, #0056b3,  #5a3ec8 50%,  #0056b3 50%, #5a3ec8); /* Darker gradient on hover */
 }
+.features-container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Styles for the features component */
+.features-container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.features-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}

@@ -6,13 +6,13 @@ const Features = () => {
     <div className="features-container">
       <h1>Our Features</h1>
       <div className="features-grid">
-        <div className="feature-card">
+        <div className="feature-item">
           <img
             src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
             alt="Software Development"
             className="feature-image"
           />
-          <div className="feature-content">
+          <div className="feature-text">
             <h2>Software Development</h2>
             <p>
               At Kalority, we're passionate about harnessing the latest
@@ -22,13 +22,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-card">
+        <div className="feature-item">
           <img
-            src="/images/284-2840001_financial-clipart-finance-chart-animated-stock-market-clipart.png"
+            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
             alt="Investment Ventures"
             className="feature-image"
           />
-          <div className="feature-content">
+          <div className="feature-text">
             <h2>Investment Ventures</h2>
             <p>
               As a forward-thinking investment company, Kalority seeks out
@@ -38,13 +38,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-card">
+        <div className="feature-item">
           <img
-            src="/images/vsla-partners.jpg"
+            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
             alt="VSLA Partners"
             className="feature-image"
           />
-          <div className="feature-content">
+          <div className="feature-text">
             <h2>VSLA Partners</h2>
             <p>
               Kalority proudly partners with Village Savings and Loan
@@ -55,13 +55,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-card">
+        <div className="feature-item">
           <img
-            src="/images/furniture-business.jpg"
+            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
             alt="Furniture Business"
             className="feature-image"
           />
-          <div className="feature-content">
+          <div className="feature-text">
             <h2>Furniture Business</h2>
             <p>
               In addition to our software endeavors, Kalority has a passion for
@@ -70,13 +70,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-card">
+        <div className="feature-item">
           <img
-            src="/images/agriculture-projects.jpg"
+            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
             alt="Agriculture Projects"
             className="feature-image"
           />
-          <div className="feature-content">
+          <div className="feature-text">
             <h2>Agriculture Projects</h2>
             <p>
               Agriculture is the backbone of our global economy, and Kalority is

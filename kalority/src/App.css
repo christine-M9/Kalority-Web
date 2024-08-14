@@ -85,7 +85,7 @@ body {
 }
 
 .image-container {
-  margin-left: auto; /* Push the image to the right */
+  margin-left: auto;
   margin-right: 5px;
 }
 
@@ -112,62 +112,62 @@ body {
 }
 /* Features Component Styles */
 .features-container {
-  padding: 90px;
-  background-color: #ffffff;
+  padding: 60px 20px;
+  background-color: transparent;
 }
 
 .features-container h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #5f5c5c;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  font-family: monospace;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  grid-auto-flow: dense; /* Enable dense packing */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
-.feature-card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+.feature-item {
+  background-color: transparent;
   border-radius: 8px;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-card:hover {
+.feature-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.feature-card .feature-image {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+.feature-image {
+  width: 40%;
+  height: 120px;
+  object-fit: cover;
 }
 
-.feature-card .feature-content {
-  padding: 15px 0;
+.feature-text {
+  padding: 20px;
 }
 
-.feature-card h2 {
+.feature-text h2 {
   font-size: 1.5rem;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  font-family: monospace;
 }
 
-.feature-card p {
-  font-size: 1rem;
-  line-height: 1.5;
+.feature-text p {
+  font-size: 0.875rem; /* Reduced font size for smaller text */
   color: #555;
+  line-height: 1.5;
 }
 
 /* Contact Page Styles */
@@ -183,6 +183,8 @@ body {
 .contact-container h2 {
   margin-bottom: 20px;
   text-align: center;
+  font-family: monospace;
+  color: #4c4a4a;
 }
 
 .contact-form {

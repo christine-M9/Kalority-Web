@@ -1,26 +1,25 @@
 
-/* Styles for the navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Align items at the ends */
-  align-items: center; /* Center items vertically */
-  padding: 10px 20px; /* Add padding around navbar */
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent; /* Remove background color */
+  background-color: transparent; 
 }
 
 .navbar-left {
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center; 
 }
 
 .company-name {
   text-decoration: none;
   color: #403d3d; /* Link text color */
-  font-size: 2.5rem; /* Adjust font size as needed */
+  font-size: 2.5rem; 
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
@@ -38,7 +37,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: rgb(48, 44, 44); /* Link text color */
+  color: rgb(48, 44, 44); 
   padding: 10px 15px;
   font-weight: bold;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -46,19 +45,19 @@
 
 .nav-link:hover,
 .nav-link.active {
-  text-decoration: underline; /* Underline on hover or active */
+  text-decoration: underline; 
 }
 /* Default styles for all pages */
 body {
-  margin: 0; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Specify a fallback font-family */
-  background-color: #f0f0f0; /* Default background color */
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0; 
 }
 
 /* Additional styles for the home page background */
 .home-container {
   display: flex;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: flex-start; 
   align-items: center;
   height: 100vh;
   background-color:#FFFFFF;
@@ -68,13 +67,13 @@ body {
 
 .content-wrapper {
   max-width: 500px;
-  text-align: left; /* Align content to the left */
+  text-align: left; 
 }
 
 .home-container h2 {
   font-size: 5.5rem;
   color: #5e5959;
-  font-family: monospace; /* Specify font family */
+  font-family: monospace; 
   margin-bottom: 20px; /* Add margin between h2 and p */
   font-weight: normal;
 }
@@ -83,12 +82,12 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   color: #555;
-  text-align: left; /* Align paragraphs to the left */
+  text-align: left; 
 }
 
 .image-container {
   margin-left: auto; /* Push the image to the right */
-  margin-right: 5px; /* Adjust margin as needed */
+  margin-right: 5px; 
 }
 
 .illustration {
@@ -99,18 +98,18 @@ body {
 }
 
 .multi-color-button {
-  background: linear-gradient(to right, #6f42c1  , #007bff 50%, #6f42c1 50%, #007bff); /* Gradient colors */
-  color: #fff; /* Text color */
-  border: none; /* Remove border */
-  padding: 20px 50px; /* Padding around text */
-  font-size: 1rem; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-top: 10px; /* Top margin */
-  border-radius: 30px; /* Rounded corners */
+  background: linear-gradient(to right, #6f42c1  , #007bff , #6f42c1 , #007bff); 
+  color: #fff; 
+  border: none; 
+  padding: 12px 50px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  border-radius: 30px; 
 }
 
 .multi-color-button:hover {
-  background: linear-gradient(to right, #0056b3,  #5a3ec8 50%,  #0056b3 50%, #5a3ec8); /* Darker gradient on hover */
+  background: linear-gradient(to right, #0056b3,  #5a3ec8 ,  #0056b3 , #5a3ec8); 
 }
 /* Features Component Styles */
 .features-container {
@@ -185,13 +184,13 @@ body {
 
 
 .contact-container h2 {
-  margin-bottom: 20px; /* Added margin below heading */
-  text-align: center; /* Center align heading */
+  margin-bottom: 20px; 
+  text-align: center; 
 }
 
 .contact-form {
   width: 100%;
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px; 
 }
 
 .contact-form input[type="text"],
@@ -214,7 +213,7 @@ body {
   background-color: #72e6ea;
   color: #fff;
   border: none;
-  padding: 5px 95px; /* Adjusted padding for button */
+  padding: 5px 95px; 
   cursor: pointer;
   font-size: 1rem;
   border-radius: 40px;

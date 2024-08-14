@@ -1,28 +1,26 @@
-
 .navbar {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 10px 20px; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .navbar-left {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .company-name {
   text-decoration: none;
   color: #403d3d; /* Link text color */
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .navbar-nav {
@@ -37,43 +35,44 @@
 
 .nav-link {
   text-decoration: none;
-  color: rgb(48, 44, 44); 
+  color: rgb(48, 44, 44);
   padding: 10px 15px;
   font-weight: bold;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 /* Default styles for all pages */
 body {
-  margin: 0; 
-  font-family: Arial, sans-serif; 
-  background-color: #f0f0f0; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 /* Additional styles for the home page background */
 .home-container {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  background-color:#FFFFFF;
+  background-color: #ffffff;
   padding-left: 60px;
   padding-right: 20px;
 }
 
 .content-wrapper {
   max-width: 500px;
-  text-align: left; 
+  text-align: left;
 }
 
 .home-container h2 {
   font-size: 5.5rem;
   color: #5e5959;
-  font-family: monospace; 
+  font-family: monospace;
   margin-bottom: 20px; /* Add margin between h2 and p */
   font-weight: normal;
 }
@@ -82,12 +81,12 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   color: #555;
-  text-align: left; 
+  text-align: left;
 }
 
 .image-container {
   margin-left: auto; /* Push the image to the right */
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 .illustration {
@@ -98,18 +97,18 @@ body {
 }
 
 .multi-color-button {
-  background: linear-gradient(to right, #6f42c1  , #007bff , #6f42c1 , #007bff); 
-  color: #fff; 
-  border: none; 
-  padding: 12px 50px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  margin-top: 10px; 
-  border-radius: 30px; 
+  background: linear-gradient(to right, #6f42c1, #007bff, #6f42c1, #007bff);
+  color: #fff;
+  border: none;
+  padding: 12px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 30px;
 }
 
 .multi-color-button:hover {
-  background: linear-gradient(to right, #0056b3,  #5a3ec8 ,  #0056b3 , #5a3ec8); 
+  background: linear-gradient(to right, #0056b3, #5a3ec8, #0056b3, #5a3ec8);
 }
 /* Features Component Styles */
 .features-container {
@@ -132,7 +131,7 @@ body {
 }
 
 .feature-card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -171,7 +170,6 @@ body {
   color: #555;
 }
 
-
 /* Contact Page Styles */
 .contact-container {
   display: flex;
@@ -182,15 +180,14 @@ body {
   background-color: #f0f0f0;
 }
 
-
 .contact-container h2 {
-  margin-bottom: 20px; 
-  text-align: center; 
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact-form {
   width: 100%;
-  max-width: 300px; 
+  max-width: 300px;
 }
 
 .contact-form input[type="text"],
@@ -213,7 +210,7 @@ body {
   background-color: #72e6ea;
   color: #fff;
   border: none;
-  padding: 5px 95px; 
+  padding: 5px 95px;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 40px;
@@ -221,4 +218,70 @@ body {
 
 .submit-button:hover {
   background-color: #72e6ea;
+}
+/* Team styles */
+.team-container {
+  padding: 100px 20px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.team-heading {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.team-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-info {
+  margin-bottom: 15px;
+}
+
+.team-info h3 {
+  font-size: 1.5rem;
+  color: #656363;
+  margin-bottom: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.team-info p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
 }

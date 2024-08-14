@@ -1,6 +1,6 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../App.css'; 
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../App.css";
 
 const Navbar = () => {
   return (
@@ -26,9 +26,13 @@ const Navbar = () => {
             Features
           </NavLink>
         </li>
-        
+
         <li className="nav-item">
-          <NavLink to="/successstories" className="nav-link" activeClassName="active">
+          <NavLink
+            to="/successstories"
+            className="nav-link"
+            activeClassName="active"
+          >
             Testimonials
           </NavLink>
         </li>
@@ -41,9 +45,9 @@ const Navbar = () => {
           <NavLink to="/contact" className="nav-link" activeClassName="active">
             Contact
           </NavLink>
-        </li>       
+        </li>
       </ul>
-      
+
       <div className="navbar-right">
         <ul className="navbar-nav">
           <li className="nav-item">

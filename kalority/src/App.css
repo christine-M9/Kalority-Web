@@ -517,3 +517,62 @@ section::after {
   transform: scale(1.05); /* Slightly enlarges the image on hover */
   opacity: 1; /* Fully visible on hover */
 }
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px 40px;
+  background-color: #303e41; /* Background color */
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't add extra width */
+  z-index: 1000; /* Ensure the footer is above other content */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  display: flex; /* Align items horizontally */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px; /* Space between links and icons */
+}
+
+.footer-links li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-icons {
+  display: flex; /* Align icons horizontally */
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #72e6ea; /* Change color on hover */
+}

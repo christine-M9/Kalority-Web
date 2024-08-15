@@ -4,7 +4,7 @@ import "../App.css";
 const Features = () => {
   return (
     <div className="features-container">
-      <h1>Our Features</h1>
+      <h1>FEATURES</h1>
       <div className="features-grid">
         <div className="feature-item">
           <img

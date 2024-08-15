@@ -261,6 +261,7 @@ html {
 }
 .bold-text {
   font-weight: bold; /* Makes the text bold */
+  
 }
 
 .contact-form textarea {
@@ -283,6 +284,21 @@ html {
 
 .submit-button:hover {
   background-color: #72e6ea;
+}
+.contact-info-questions {
+  color: white; /* White text color for the questions text */
+  font-size: 2.0rem;
+}
+.contact-highlight {
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* White text color */
+  font-size: 1.8rem;
+}
+
+.contact-info-number {
+  font-weight: bold; /* Makes the number bold */
+  color: white; /* White text color */
+  font-size: 3rem;
 }
 
 /* Team styles */

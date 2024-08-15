@@ -30,6 +30,10 @@ const ContactPage = () => {
           Send Message
         </button>
       </form>
+      <div className="contact-info">
+        <p><span className="contact-highlight">Have any</span> <span className="contact-info-questions">Questions?</span></p>
+        <p><span className="contact-info-number">+254 xxxxxxxxx</span></p>
+      </div>
     </div>
   );
 };

@@ -540,10 +540,11 @@ section::after {
 .footer-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 .footer-center {
-  text-align: center;
+  text-align: flex;
 }
 
 .footer-right {
@@ -554,8 +555,9 @@ section::after {
 .footer-links {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
   margin-right: 20px; /* Space between links and icons */
+  
 }
 
 .footer-links li {
@@ -564,10 +566,11 @@ section::after {
 
 .footer-icons {
   display: flex; /* Align icons horizontally */
+  margin-top: 20px;
 }
 
 .footer-icons a {
-  margin: 0 10px;
+  margin: 0 15px;
   color: white;
   font-size: 1.5rem;
   text-decoration: none;

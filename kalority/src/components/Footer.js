@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
         <div className="footer-icons">
           <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaXTwitter /></a> {/* New Twitter icon */}
+          <a href="#"><FaXTwitter /></a> 
           <a href="#"><FaYoutube /></a>
           <a href="#"><FaInstagram /></a>
         </div>

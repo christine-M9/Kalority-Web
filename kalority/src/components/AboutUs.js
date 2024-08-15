@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="about-us-container">
       <div className="about-us-content">
         <div className="about-us-image">
-          <img src="/images/About image.png" alt="About Us" />
+          <img src="/images/About image.png" alt="Kalority Team" />
         </div>
         <div className="about-us-text">
           <h2>About Us</h2>
@@ -22,6 +22,15 @@ const AboutUs = () => {
           </p>
           <button className="about-us-button">More About</button>
         </div>
+      </div>
+
+      {/* Additional images at the end of the section */}
+      <div className="about-us-images">
+        <img src="/images/ss1.png" alt="workspace" className="about-us-extra-image" />
+        <img src="/images/ss2.png" alt="Team" className="about-us-extra-image" />
+        <img src="/images/ss3.png" alt="Kalority" className="about-us-extra-image" />
+        <img src="/images/ss4.png" alt="Event" className="about-us-extra-image" />
+        <img src="/images/ss5.png" alt="Tech" className="about-us-extra-image" />
       </div>
     </div>
   );

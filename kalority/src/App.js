@@ -4,8 +4,6 @@ import Home from "./components/Home";
 import Features from "./components/Features";
 import Contact from "./components/ContactPage";
 import Team from "./components/TeamSection";
-// import Details from './components/Details';
-// import SuccessStories from './components/SuccessStories';
 import "./App.css";
 
 const App = () => {

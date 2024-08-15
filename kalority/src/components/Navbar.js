@@ -31,6 +31,16 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+      <div className="navbar-right">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a href="#signin" className="nav-link">
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

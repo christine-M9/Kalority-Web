@@ -292,3 +292,6 @@ body {
   padding: 80px 20px;
   margin-top: 60px;
 } */
+html {
+  scroll-behavior: smooth;
+}

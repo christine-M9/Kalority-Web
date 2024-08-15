@@ -1,13 +1,37 @@
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: absolute;
+  position: absolute; /* Positioned at the top of the homepage */
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: transparent; /* Transparent initially on the homepage */
+  transition: background-color 0.3s, box-shadow 0.3s, position 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Navbar for other pages */
+.navbar.sticky {
+  position: fixed; /* Stick to the top of the viewport */
+  background-color: #ffffff; /* Solid background when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  opacity: 1; /* Fully opaque */
+}
+
+/* Navbar Text Style on Homepage */
+.navbar-text {
+  font-size: 1rem;
+  color: #403d3d;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Ensure the main content isn't hidden under the fixed navbar */
+.main-content {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
 }
 
 .navbar-left {

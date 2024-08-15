@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Features from "./components/Features";
@@ -7,6 +7,23 @@ import Team from "./components/TeamSection";
 import "./App.css";
 
 const App = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      const homeSection = document.querySelector("#home");
+      const homeSectionHeight = homeSection.offsetHeight;
+
+      if (window.scrollY > homeSectionHeight) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="App">
       <Navbar />

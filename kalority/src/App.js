@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import AboutUs from "./components/AboutUs"; 
 import Features from "./components/Features";
 import Contact from "./components/ContactPage";
 import Team from "./components/TeamSection";
@@ -30,6 +31,9 @@ const App = () => {
       <div className="main-content">
         <section id="home">
           <Home />
+        </section>
+        <section id="about-us">
+          <AboutUs /> {/* new section */}
         </section>
         <section id="features">
           <Features />

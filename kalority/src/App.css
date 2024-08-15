@@ -319,3 +319,66 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* About Us Component Styles */
+.about-us-container {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+
+.about-us-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Remove margins and paddings between sections */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Section */
+.home-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* Consistent background color */
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+/* About Us Section */
+.about-us-container {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Same background color as Home and Features */
+  text-align: center;
+}
+
+/* Features Section */
+.features-container {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Same background color as Home and About Us */
+}
+
+/* Ensure the body and html have no default margins/paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content padding to accommodate fixed navbar */
+.main-content {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+}

@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/pngtree-business-man-with-laptop-cartoon-vector-illustration-length-computer-smart-photo-picture-image_8259441.jpg"
+          src="/images/home image.png"
           alt="Illustration"
           className="illustration"
         />

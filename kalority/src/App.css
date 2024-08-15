@@ -29,11 +29,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* Ensure the main content isn't hidden under the fixed navbar */
-.main-content {
-  padding-top: 60px; /* Adjust based on the height of your navbar */
-}
-
+/* Navbar Links */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -70,6 +66,7 @@
 .nav-link.active {
   text-decoration: underline;
 }
+
 /* Default styles for all pages */
 body {
   margin: 0;
@@ -77,13 +74,22 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Additional styles for the home page background */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main content padding to accommodate fixed navbar */
+.main-content {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+}
+
+/* Home Section */
 .home-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Consistent background color */
   padding-left: 60px;
   padding-right: 20px;
 }
@@ -108,16 +114,28 @@ body {
   text-align: left;
 }
 
+
+/* Image Container with Slanted Effect */
 .image-container {
-  margin-left: auto;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 2px;
+  transform: rotate(-5deg); /* Rotate image to slant */
+  transform-origin: center; /* Rotate around the center */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  
 }
 
+
 .illustration {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
   display: block;
   /* border-radius: 50%; */
+  transform: skewX(-10deg);
+  object-fit: cover; 
 }
 
 .multi-color-button {
@@ -134,10 +152,11 @@ body {
 .multi-color-button:hover {
   background: linear-gradient(to right, #0056b3, #5a3ec8, #0056b3, #5a3ec8);
 }
+
 /* Features Component Styles */
 .features-container {
   padding: 60px 20px;
-  background-color: transparent;
+  background-color: #ffffff; /* Same background color as Home and About Us */
 }
 
 .features-container h1 {
@@ -245,6 +264,7 @@ body {
 .submit-button:hover {
   background-color: #72e6ea;
 }
+
 /* Team styles */
 .team-container {
   padding: 100px 20px;
@@ -312,35 +332,54 @@ body {
   color: #007bff;
 }
 
-/* section {
-  padding: 80px 20px;
-  margin-top: 60px;
-} */
-html {
-  scroll-behavior: smooth;
-}
-
 /* About Us Component Styles */
 .about-us-container {
   padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+  background-color: #ffffff; /* Consistent background color */
+  text-align: center; /* Center the content within the container */
 }
 
-.about-us-container h2 {
-  font-size: 2.2rem;
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the items horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-image {
+  flex: 1;
+  padding-right: 20px; /* Adds space between image and text */
+}
+
+.about-us-image img {
+  width: 60%; /* Adjusted for better balance */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.about-us-text {
+  flex: 1;
+  padding-left: 20px; /* Adds space between text and image */
+  max-width: 500px; /* Limits the width to prevent excessive stretching */
+  text-align: left; /* Ensure text alignment is left for better readability */
+}
+
+.about-us-text h2 {
+  font-size: 2.8rem; /* Increased font size for heading */
   color: #333;
   margin-bottom: 20px;
   font-family: monospace;
 }
 
-.about-us-container p {
-  font-size: 1rem;
-  color: #555;
+.about-us-text p {
+  font-size: 1.2rem; /* Increased font size for paragraph */
+  color: #7c7878;
   line-height: 1.6;
-  max-width: 800px;
   margin: 0 auto;
 }
+
 
 /* Remove margins and paddings between sections */
 section {
@@ -348,37 +387,38 @@ section {
   padding: 0;
 }
 
-/* Home Section */
-.home-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  background-color: #ffffff; /* Consistent background color */
-  padding-left: 60px;
-  padding-right: 20px;
-}
-
-/* About Us Section */
-.about-us-container {
-  padding: 60px 20px;
-  background-color: #ffffff; /* Same background color as Home and Features */
-  text-align: center;
-}
-
-/* Features Section */
-.features-container {
-  padding: 60px 20px;
-  background-color: #ffffff; /* Same background color as Home and About Us */
-}
-
-/* Ensure the body and html have no default margins/paddings */
-body, html {
+/* Ensure no visible lines between sections */
+section::before,
+section::after {
+  content: "";
+  display: block;
   margin: 0;
   padding: 0;
 }
 
-/* Main content padding to accommodate fixed navbar */
-.main-content {
-  padding-top: 60px; /* Adjust based on the height of your navbar */
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .features-grid {
+    gap: 20px;
+    margin: 0;
+  }
+
+  .team-member-container {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container h1 {
+    font-size: 1.8rem;
+  }
 }

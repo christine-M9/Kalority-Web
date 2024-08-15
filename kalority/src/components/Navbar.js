@@ -1,62 +1,36 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../App.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <NavLink exact to="/" className="company-name">
+        <a href="#home" className="company-name">
           Kalority
-        </NavLink>
+        </a>
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <NavLink exact to="/" className="nav-link" activeClassName="active">
+          <a href="#home" className="nav-link">
             Home
-          </NavLink>
+          </a>
         </li>
         <li className="nav-item">
-          <NavLink to="/details" className="nav-link" activeClassName="active">
-            Details
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/features" className="nav-link" activeClassName="active">
+          <a href="#features" className="nav-link">
             Features
-          </NavLink>
-        </li>
-
-        <li className="nav-item">
-          <NavLink
-            to="/successstories"
-            className="nav-link"
-            activeClassName="active"
-          >
-            Testimonials
-          </NavLink>
+          </a>
         </li>
         <li className="nav-item">
-          <NavLink to="/team" className="nav-link" activeClassName="active">
+          <a href="#team" className="nav-link">
             Team
-          </NavLink>
+          </a>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" className="nav-link" activeClassName="active">
+          <a href="#contact" className="nav-link">
             Contact
-          </NavLink>
+          </a>
         </li>
       </ul>
-
-      <div className="navbar-right">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <NavLink to="/signin" className="nav-link">
-              Sign In
-            </NavLink>
-          </li>
-        </ul>
-      </div>
     </nav>
   );
 };

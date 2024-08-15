@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Features from "./components/Features";
@@ -11,21 +10,23 @@ import "./App.css";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/features" element={<Features />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/team" element={<Team />} />
-            {/* <Route path="/details" element={<Details />} /> */}
-            {/* <Route path="/successstories" element={<SuccessStories />} /> */}
-          </Routes>
-        </div>
+    <div className="App">
+      <Navbar />
+      <div className="main-content">
+        <section id="home">
+          <Home />
+        </section>
+        <section id="features">
+          <Features />
+        </section>
+        <section id="team">
+          <Team />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 

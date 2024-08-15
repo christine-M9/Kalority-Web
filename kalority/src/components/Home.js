@@ -1,16 +1,9 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import "../App.css";
 
 const Home = () => {
-  const location = useLocation();
-
   return (
-    <div
-      className={`home-container ${
-        location.pathname === "/" ? "home-background" : ""
-      }`}
-    >
+    <div id="home" className="home-container home-background">
       <div className="content-wrapper">
         <h2>Welcome to Kalority</h2>
         <div className="additional-content">
@@ -26,7 +19,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/pngtree-business-man-with-laptop-cartoon-vector-illustration-length-computer-smart-photo-picture-image_8259441.jpg" // Path relative to public directory
+          src="/images/pngtree-business-man-with-laptop-cartoon-vector-illustration-length-computer-smart-photo-picture-image_8259441.jpg"
           alt="Illustration"
           className="illustration"
         />

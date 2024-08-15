@@ -8,7 +8,7 @@ const Features = () => {
       <div className="features-grid">
         <div className="feature-item">
           <img
-            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
+            src="/images/smartphone_9204617.png"
             alt="Software Development"
             className="feature-image"
           />
@@ -24,7 +24,7 @@ const Features = () => {
         </div>
         <div className="feature-item">
           <img
-            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
+            src="/images/smartphone_9204617.png"
             alt="Investment Ventures"
             className="feature-image"
           />
@@ -40,7 +40,7 @@ const Features = () => {
         </div>
         <div className="feature-item">
           <img
-            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
+            src="/images/smartphone_9204617.png"
             alt="VSLA Partners"
             className="feature-image"
           />
@@ -57,7 +57,7 @@ const Features = () => {
         </div>
         <div className="feature-item">
           <img
-            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
+            src="/images/smartphone_9204617.png"
             alt="Furniture Business"
             className="feature-image"
           />
@@ -72,7 +72,7 @@ const Features = () => {
         </div>
         <div className="feature-item">
           <img
-            src="/images/it-developer-coding-on-laptop-line-2d-loading-animation-software-engineering-remote-employee-animated-cartoon-linear-character-4k-loading-motion-graphic-coder-programmer-download-process-gif-video.jpg"
+            src="/images/smartphone_9204617.png"
             alt="Agriculture Projects"
             className="feature-image"
           />

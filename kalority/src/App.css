@@ -373,6 +373,25 @@ html {
   font-family: monospace;
 }
 
+.about-us-additional {
+  padding: 20px 0; /* Adds spacing above and below the additional section */
+}
+
+.awesome-things {
+  font-size: 2.8rem; /* Font size for "Awesome Things" */
+  font-weight: bold; /* Makes the text bold */
+  color: black;
+  margin: 10px 0; /* Adds spacing above and below each paragraph */
+  font-family: sans-serif;
+}
+
+.about-kalority {
+  font-size: 1.8rem; /* Font size for "About Kalority" */
+  color: #333;
+  margin: 10px 0; /* Adds spacing above and below each paragraph */
+  font-family: sans-serif;
+}
+
 .about-us-text p {
   font-size: 1.2rem; /* Increased font size for paragraph */
   color: #7c7878;
@@ -380,6 +399,23 @@ html {
   margin: 0 auto;
 }
 
+.about-us-button {
+  margin-top: 30px; /* Adds space above the button */
+  padding: 16px 40px; /* Adds padding inside the button */
+  font-size: 1rem; /* Sets font size for button text */
+  color: #1a539c; /* Button text color */
+  background-color: #cfdde6; /* Initial button background color */
+  border: none; /* Removes default button border */
+  border-radius: 30px; /* Rounds the button corners */
+  cursor: pointer; /* Shows a pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth transition for background */
+  font-weight: bold;
+}
+
+.about-us-button:hover {
+  background: linear-gradient(to right, #6c598f,  #413062,#1a518c, #316dad); /* Gradient on hover */
+  color: #ffffff;
+}
 
 /* Remove margins and paddings between sections */
 section {

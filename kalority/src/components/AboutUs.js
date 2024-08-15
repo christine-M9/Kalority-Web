@@ -10,12 +10,17 @@ const AboutUs = () => {
         </div>
         <div className="about-us-text">
           <h2>About Us</h2>
+          <div className="about-us-additional">
+            <p className="awesome-things">Awesome Things</p>
+            <p className="about-kalority">About Kalority</p>
+          </div>
           <p>
             At Kalority, we're driven by a shared commitment to excellence,
             innovation, and social responsibility. Our mission is to create lasting
             value for our clients, partners, and communities. Get in touch with us
             today to discover how Kalority can help you thrive in the digital age.
           </p>
+          <button className="about-us-button">More About</button>
         </div>
       </div>
     </div>

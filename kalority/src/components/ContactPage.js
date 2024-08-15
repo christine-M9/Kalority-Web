@@ -4,7 +4,9 @@ import "../App.css";
 const ContactPage = () => {
   return (
     <div className="contact-container">
-      <h2>Get in Touch</h2>
+      <h2>
+        <span className="bold-text">Get</span> in Touch
+      </h2>
       <form className="contact-form">
         <input
           type="text"

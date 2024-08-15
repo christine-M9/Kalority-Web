@@ -114,7 +114,6 @@ html {
   text-align: left;
 }
 
-
 /* Image Container with Slanted Effect */
 .image-container {
   margin-left: 10px;
@@ -125,9 +124,7 @@ html {
   overflow: hidden;
   width: 100%;
   height: auto;
-  
 }
-
 
 .illustration {
   max-width: 90%;
@@ -135,7 +132,7 @@ html {
   display: block;
   /* border-radius: 50%; */
   transform: skewX(-10deg);
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .multi-color-button {
@@ -220,30 +217,50 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 10rem;
-  background-color: #f0f0f0;
+  background: linear-gradient(to right, #6c598f, #604499, #1a518c, #316dad);
 }
 
 .contact-container h2 {
   margin-bottom: 20px;
   text-align: center;
   font-family: monospace;
-  color: #4c4a4a;
+  color: white;
+  font-size: 3rem;
 }
 
 .contact-form {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   font-size: 1rem;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly dark background */
+  color: white; /* White text */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Slightly dark border */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+/* Placeholder text color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white; /* White placeholder text */
+}
+/* Focus styles */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: white; /* White background when focused */
+  color: black; /* Black text when focused */
+  border-color: black; /* Black border when focused */
+  outline: none; /* Remove default focus outline */
+}
+.bold-text {
+  font-weight: bold; /* Makes the text bold */
 }
 
 .contact-form textarea {
@@ -252,13 +269,16 @@ html {
 }
 
 .submit-button {
-  background-color: #72e6ea;
+  background-color: #64e7c2;
   color: #fff;
   border: none;
-  padding: 5px 95px;
+  padding: 13px 220px;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 40px;
+  text-align: center; /* Ensures text is centered */
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: inline-block; /* Allows the button to adjust width based on content */
 }
 
 .submit-button:hover {
@@ -333,12 +353,11 @@ html {
 }
 
 /* About Us Component Styles */
- .about-us-container {
+.about-us-container {
   padding: 150px 20px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   /* text-align: center;  */
-
-} 
+}
 
 .about-us-content {
   display: flex;
@@ -353,7 +372,6 @@ html {
   padding-right: 10px; /* Adds space between image and text */
   margin-left: 40px;
 }
-
 
 .about-us-text {
   flex: 1;
@@ -409,7 +427,13 @@ html {
 }
 
 .about-us-button:hover {
-  background: linear-gradient(to right, #6c598f,  #413062,#1a518c, #316dad); /* Gradient on hover */
+  background: linear-gradient(
+    to right,
+    #6c598f,
+    #413062,
+    #1a518c,
+    #316dad
+  ); /* Gradient on hover */
   color: #ffffff;
 }
 

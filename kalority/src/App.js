@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
-import Features from "./components/Features"; 
+import Features from "./components/Features";
 import OurProjects from "./components/OurProjects";
+import Testimonials from "./components/Testimonials";
 import Team from "./components/TeamSection";
 import Contact from "./components/ContactPage";
 import "./App.css";
@@ -13,13 +14,38 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
-      const homeSection = document.querySelector("#home");
-      const homeSectionHeight = homeSection.offsetHeight;
+      const sections = document.querySelectorAll("section");
 
-      if (window.scrollY > homeSectionHeight) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
+      if (!navbar) return;
+
+      const scrollPos = window.scrollY + 100;
+
+      sections.forEach((section) => {
+        const sectionId = section.getAttribute("id");
+        const link = document.querySelector(`a[href="#${sectionId}"]`);
+
+        if (link) {
+          if (
+            scrollPos > section.offsetTop &&
+            scrollPos < section.offsetTop + section.offsetHeight
+          ) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        }
+      });
+
+      const homeSection = document.querySelector("#home");
+
+      if (homeSection) {
+        const homeSectionHeight = homeSection.offsetHeight;
+
+        if (window.scrollY > homeSectionHeight) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
       }
     };
 
@@ -45,6 +71,9 @@ const App = () => {
         </section>
         <section id="our-projects">
           <OurProjects />
+        </section>
+        <section id="testimonials">
+          <Testimonials />
         </section>
         <section id="team">
           <Team />

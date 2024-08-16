@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs"; 
-import Features from "./components/Features";
-import OurProjects from "./components/OurProjects";  // Import the new component
+import Services from "./components/Services";
+import OurProjects from "./components/OurProjects";  
 import Team from "./components/TeamSection";
 import Contact from "./components/ContactPage";
 import "./App.css";
@@ -36,8 +36,8 @@ const App = () => {
         <section id="about-us">
           <AboutUs />
         </section>
-        <section id="features">
-          <Features />
+        <section id="services">
+          <Services />
         </section>
         <section id="our-projects">  {/* Add the new section here */}
           <OurProjects />

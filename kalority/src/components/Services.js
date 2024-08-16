@@ -1,18 +1,18 @@
 import React from "react";
 import "../App.css";
 
-const Features = () => {
+const Services = () => {
   return (
-    <div className="features-container">
-      <h1>FEATURES</h1>
-      <div className="features-grid">
-        <div className="feature-item">
+    <div className="services-container">
+      <h1>SERVICES</h1>
+      <div className="services-grid">
+        <div className="service-item">
           <img
             src="/images/smartphone_9204617.png"
             alt="Software Development"
-            className="feature-image"
+            className="service-image"
           />
-          <div className="feature-text">
+          <div className="service-text">
             <h2>Software Development</h2>
             <p>
               At Kalority, we're passionate about harnessing the latest
@@ -22,13 +22,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-item">
+        <div className="service-item">
           <img
             src="/images/smartphone_9204617.png"
             alt="Investment Ventures"
-            className="feature-image"
+            className="service-image"
           />
-          <div className="feature-text">
+          <div className="service-text">
             <h2>Investment Ventures</h2>
             <p>
               As a forward-thinking investment company, Kalority seeks out
@@ -38,13 +38,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-item">
+        <div className="service-item">
           <img
             src="/images/smartphone_9204617.png"
             alt="VSLA Partners"
-            className="feature-image"
+            className="service-image"
           />
-          <div className="feature-text">
+          <div className="service-text">
             <h2>VSLA Partners</h2>
             <p>
               Kalority proudly partners with Village Savings and Loan
@@ -55,13 +55,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-item">
+        <div className="service-item">
           <img
             src="/images/smartphone_9204617.png"
             alt="Furniture Business"
-            className="feature-image"
+            className="service-image"
           />
-          <div className="feature-text">
+          <div className="service-text">
             <h2>Furniture Business</h2>
             <p>
               In addition to our software endeavors, Kalority has a passion for
@@ -70,13 +70,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="feature-item">
+        <div className="service-item">
           <img
             src="/images/smartphone_9204617.png"
             alt="Agriculture Projects"
-            className="feature-image"
+            className="service-image"
           />
-          <div className="feature-text">
+          <div className="service-text">
             <h2>Agriculture Projects</h2>
             <p>
               Agriculture is the backbone of our global economy, and Kalority is
@@ -91,4 +91,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Services;

@@ -151,13 +151,13 @@ html {
   background: linear-gradient(to right, #0056b3, #5a3ec8, #0056b3, #5a3ec8);
 }
 
-/* Features Component Styles */
-.features-container {
+/* Services Component Styles */
+.services-container {
   padding: 60px 20px;
   background-color: #ffffff; /* Same background color as Home and About Us */
 }
 
-.features-container h1 {
+.services-container h1 {
   font-size: 2.2rem;
   color: #5f5c5c;
   text-align: center;
@@ -165,7 +165,7 @@ html {
   font-family: monospace;
 }
 
-.features-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 90px;
@@ -173,7 +173,7 @@ html {
   margin-right: 90px;
 }
 
-.feature-item {
+.service-item {
   background-color: transparent;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -183,29 +183,29 @@ html {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-item:hover {
+.service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.feature-image {
+.service-image {
   width: 40%;
   height: 120px;
   object-fit: cover;
 }
 
-.feature-text {
+.service-text {
   padding: 20px;
 }
 
-.feature-text h2 {
+.service-text h2 {
   font-size: 1.5rem;
   color: #444;
   margin-bottom: 40px;
   font-family: monospace;
 }
 
-.feature-text p {
+.service-text p {
   font-size: 0.875rem; /* Reduced font size for smaller text */
   color: #555;
   line-height: 1.5;

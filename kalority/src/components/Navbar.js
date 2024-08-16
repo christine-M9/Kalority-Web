@@ -16,8 +16,8 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#features" className="nav-link navbar-text">
-            Features
+          <a href="#services" className="nav-link navbar-text">
+            Services
           </a>
         </li>
         <li className="nav-item">

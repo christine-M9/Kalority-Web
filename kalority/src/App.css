@@ -664,7 +664,70 @@ section::after {
 
 .project-type {
   display: block; /* Ensure it appears on a new line */
-  font-weight: normal; /* Not bold */
+  font-weight: normal; 
   margin-top: 5px; /* Small space above */
   margin-bottom: 0; /* No extra space below */
+}
+
+.features {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #FFFFFF;
+  padding: 65px; /* Remove padding for full width use */
+  margin-left: 0px; /* Ensure no margin affects the alignment */
+  
+}
+
+.text-section {
+  flex: 1;
+  padding: 30px; /* Padding as needed */
+  box-sizing: border-box;
+  max-width: 550px;
+  margin-right: 20px; /* Space between text and image */
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-end; /* Align items to the right */
+  position: relative; /* Allows absolute positioning within */
+}
+
+.image-section img {
+  position: absolute; /* Position image absolutely within container */
+  top: 0;
+  right: 0;
+  width: 107%; /* Adjust width as needed */
+  height: 86%; /* Adjust height as needed */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+h2 {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #316eae;;
+}
+
+/* General Paragraph Styling */
+p {
+  font-size: 1rem; /* Consistent size for all paragraphs */
+  line-height: 1.5; /* Line height for readability */
+  margin: 0 0 20px; /* Bottom margin for spacing between paragraphs */
+  font-weight: normal; /* Normal weight for all paragraphs */
+}
+
+/* Bold Paragraphs */
+.bold-paragraph,
+.important-features {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.web-site-analysis {
+  margin-top: 40px;
+}
+.important-features,
+.bold-dig {
+  font-size: 2.1rem;
 }

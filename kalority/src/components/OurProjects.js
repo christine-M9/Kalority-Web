@@ -5,27 +5,43 @@ const OurProjects = () => {
   return (
     <section id="our-projects" className="our-projects">
       <h2>Our Projects</h2>
-      <p className="no-margin" style={{ fontWeight: 'bold' }}>We've done lots of work</p>
+      <p className="no-margin" style={{ fontWeight: "bold" }}>
+        We've done lots of work
+      </p>
       <p className="no-margin">Check some from here</p>
 
       <div className="projects-grid">
         <div className="project-card">
-          <img src="./images/project img1.jpg" alt="Project 1" className="project-image" />
+          <img
+            src="./images/project img1.jpg"
+            alt="Project 1"
+            className="project-image"
+          />
           <a href="link_to_digital_marketing_project" className="project-link">
             <h3>
               Digital Marketing <span className="project-type">Project</span>
             </h3>
           </a>
-          <p>Redfin perch tripod fish zebra lionfish, nase slickhead! Jewelfish angler Devario gray reef shark.</p>
+          <p>
+            Redfin perch tripod fish zebra lionfish, nase slickhead! Jewelfish
+            angler Devario gray reef shark.
+          </p>
         </div>
         <div className="project-card">
-          <img src="./images/project img2.jpg" alt="Project 2" className="project-image" />
+          <img
+            src="./images/project img2.jpg"
+            alt="Project 2"
+            className="project-image"
+          />
           <a href="link_to_seo_project_ny" className="project-link">
             <h3>
               Creating SEO <span className="project-type">Projects in NY</span>
             </h3>
           </a>
-          <p>Atlantic herring southern sandfish. Vimba, zebrafish yellow and black triplefin guitarfish Redfin perch.</p>
+          <p>
+            Atlantic herring southern sandfish. Vimba, zebrafish yellow and
+            black triplefin guitarfish Redfin perch.
+          </p>
         </div>
       </div>
     </section>

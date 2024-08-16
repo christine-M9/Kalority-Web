@@ -701,6 +701,9 @@ section::after {
   width: 107%; /* Adjust width as needed */
   height: 86%; /* Adjust height as needed */
   object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  transform-style: preserve-3d; /* Ensure 3D transforms are preserved */
+  transition: transform 0.1s ease-out;
+
 }
 
 h2 {

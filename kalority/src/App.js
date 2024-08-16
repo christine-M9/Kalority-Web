@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs"; 
 import Features from "./components/Features";
-import Contact from "./components/ContactPage";
+import OurProjects from "./components/OurProjects";  // Import the new component
 import Team from "./components/TeamSection";
+import Contact from "./components/ContactPage";
 import "./App.css";
 
 const App = () => {
@@ -33,10 +34,13 @@ const App = () => {
           <Home />
         </section>
         <section id="about-us">
-          <AboutUs /> {/* new section */}
+          <AboutUs />
         </section>
         <section id="features">
           <Features />
+        </section>
+        <section id="our-projects">  {/* Add the new section here */}
+          <OurProjects />
         </section>
         <section id="team">
           <Team />

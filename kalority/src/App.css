@@ -579,3 +579,89 @@ section::after {
 .footer-icons a:hover {
   color: #72e6ea; /* Change color on hover */
 }
+/* project styling */
+.our-projects {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.our-projects h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.our-projects .no-margin {
+  font-size: 1.25rem;
+  margin: 0; /* Remove margin to reduce space */
+  line-height: 1.4;
+}
+
+.projects-grid {
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 30px; /* Space between grid items */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 20px; /* Padding around the grid */
+  justify-content: center; /* Center grid items horizontally */
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+  text-align: center; /* Center text within the card */
+  width: 400px; /* Fixed width for cards */
+  height: 550px; /* Fixed height for cards to make them taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  transition: box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition for shadow and filter */
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  filter: brightness(1.1); /* Slight brightness increase for better visibility */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.project-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+.project-link h3 {
+  color: #333; /* Default color for the heading */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  margin: 0; /* Remove default margin */
+  line-height: 1.4; /* Adjust line height for spacing */
+}
+
+.project-link:hover h3 {
+  color: rgb(36, 151, 213); /* Color on hover */
+}
+
+.project-type {
+  display: block; /* Ensure it appears on a new line */
+  font-weight: normal; /* Not bold */
+  margin-top: 5px; /* Small space above */
+  margin-bottom: 0; /* No extra space below */
+}

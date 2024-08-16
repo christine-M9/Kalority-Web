@@ -1,19 +1,20 @@
 import React, { useEffect } from "react";
-import "../App.css"; 
+import "../App.css";
 
 const Features = () => {
   useEffect(() => {
     const image = document.querySelector('.image-section img');
 
     const handleMouseMove = (event) => {
-      const { clientX, clientY } = event;
-      const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight / 2;
-      const deltaX = clientX - centerX;
-      const deltaY = clientY - centerY;
+      const { offsetX, offsetY, target } = event;
+      const { clientWidth, clientHeight } = target;
+      const centerX = clientWidth / 2;
+      const centerY = clientHeight / 2;
+      const deltaX = offsetX - centerX;
+      const deltaY = offsetY - centerY;
 
-      const rotateX = (deltaY / centerY) * 30;
-      const rotateY = (deltaX / centerX) * -30; 
+      const rotateX = (deltaY / centerY) * 25; 
+      const rotateY = (deltaX / centerX) * -25; 
 
       image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     };
@@ -22,12 +23,12 @@ const Features = () => {
       image.style.transform = 'rotateX(0deg) rotateY(0deg)';
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseout', resetImagePosition);
+    image.addEventListener('mousemove', handleMouseMove);
+    image.addEventListener('mouseleave', resetImagePosition);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseout', resetImagePosition);
+      image.removeEventListener('mousemove', handleMouseMove);
+      image.removeEventListener('mouseleave', resetImagePosition);
     };
   }, []);
 

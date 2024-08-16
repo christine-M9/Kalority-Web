@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const image = document.querySelector('.about-us-image img');
+
+    const handleMouseMove = (event) => {
+      const { offsetX, offsetY, target } = event;
+      const { clientWidth, clientHeight } = target;
+      const centerX = clientWidth / 2;
+      const centerY = clientHeight / 2;
+      const deltaX = offsetX - centerX;
+      const deltaY = offsetY - centerY;
+
+      const rotateX = (deltaY / centerY) * 30; 
+      const rotateY = (deltaX / centerX) * -30;
+
+      image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    };
+
+    const resetImagePosition = () => {
+      image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    };
+
+    image.addEventListener('mousemove', handleMouseMove);
+    image.addEventListener('mouseleave', resetImagePosition);
+
+    return () => {
+      image.removeEventListener('mousemove', handleMouseMove);
+      image.removeEventListener('mouseleave', resetImagePosition);
+    };
+  }, []);
+
   return (
     <div className="about-us-container">
       <div className="about-us-content">
@@ -24,7 +54,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Additional images at the end of the section */}
       <div className="about-us-images">
         <img src="/images/ss1.png" alt="workspace" className="about-us-extra-image" />
         <img src="/images/ss2.png" alt="Team" className="about-us-extra-image" />

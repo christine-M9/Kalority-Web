@@ -387,6 +387,12 @@ html {
   flex: 1;
   padding-right: 10px; /* Adds space between image and text */
   margin-left: 40px;
+  
+
+}
+.about-us-image img{
+  transform-style: preserve-3d; /* Ensure 3D transforms are preserved */
+  transition: transform 0.1s ease-out;
 }
 
 .about-us-text {

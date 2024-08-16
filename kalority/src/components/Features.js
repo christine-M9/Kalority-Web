@@ -50,6 +50,7 @@ const Features = () => {
           <p className="web-site-title">Web Site Analysis</p>
           <p className="content-optimization-title">Content Optimization</p>
           <p>Free Optimization</p>
+          <button className="feature-button">Read More</button>
         </div>
       </div>
       <div className="image-section">

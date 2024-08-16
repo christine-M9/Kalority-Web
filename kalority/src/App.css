@@ -740,3 +740,27 @@ p {
 .bold-dig {
   font-size: 2.1rem;
 }
+/* Features button */
+.feature-button {
+  margin-top: 30px; 
+  padding: 16px 40px; 
+  font-size: 1rem; 
+  color: #1a539c; 
+  background-color: #cfdde6; 
+  border: none; 
+  border-radius: 30px; 
+  cursor: pointer; 
+  transition: background 0.3s ease; 
+  font-weight: bold;
+}
+.feature-button:hover {
+  background: linear-gradient(
+    to right,
+    #6c598f,
+    #413062,
+    #1a518c,
+    #316dad
+  ); /* Gradient on hover */
+  color: #ffffff;
+
+}

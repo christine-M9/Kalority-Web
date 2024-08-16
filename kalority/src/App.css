@@ -1,3 +1,11 @@
+
+
+/* app.css */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -26,7 +34,7 @@
   font-size: 1rem;
   color: #403d3d;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
 }
 
 /* Navbar Links */
@@ -40,7 +48,7 @@
   color: #403d3d; /* Link text color */
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
 }
 
 .navbar-nav {
@@ -58,20 +66,13 @@
   color: rgb(48, 44, 44);
   padding: 10px 15px;
   font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
 }
 
 .nav-link:hover,
 .nav-link.active {
   text-decoration: underline;
-}
-
-/* Default styles for all pages */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
 }
 
 html {
@@ -104,7 +105,7 @@ html {
   color: #5e5959;
   font-family: monospace;
   margin-bottom: 20px; /* Add margin between h2 and p */
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 .additional-content p {
@@ -585,15 +586,17 @@ section::after {
 }
 
 .our-projects h2 {
-  font-size: 2.5rem;
+  font-size: 0.8rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #2d77c7;
 }
 
 .our-projects .no-margin {
   font-size: 1.25rem;
   margin: 0; /* Remove margin to reduce space */
   line-height: 1.4;
+  font-size: 2.2rem;
 }
 
 .projects-grid {

@@ -4,7 +4,7 @@ import "../App.css";
 const OurProjects = () => {
   return (
     <section id="our-projects" className="our-projects">
-      <h2>Our Projects</h2>
+      <h2>OUR PROJECTS</h2>
       <p className="no-margin" style={{ fontWeight: "bold" }}>
         We've done lots of work
       </p>

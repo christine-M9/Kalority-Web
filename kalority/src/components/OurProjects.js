@@ -6,7 +6,7 @@ const OurProjects = () => {
     <section id="our-projects" className="our-projects">
       <h2>OUR PROJECTS</h2>
       <p className="no-margin" style={{ fontWeight: "bold" }}>
-        We've done lots of work
+        We've Done Lot's Of Work
       </p>
       <p className="no-margin">Check some from here</p>
 

@@ -4,7 +4,10 @@ import "../App.css";
 const Services = () => {
   return (
     <div className="services-container">
-      <h1>SERVICES</h1>
+      <h1>OUR SERVICES</h1>
+      <p className="services-description">
+        <strong>What We</strong> can do for you
+      </p>
       <div className="services-grid">
         <div className="service-item">
           <img

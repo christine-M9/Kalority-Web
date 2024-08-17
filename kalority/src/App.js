@@ -72,12 +72,13 @@ const App = () => {
         <section id="our-projects">
           <OurProjects />
         </section>
-        <section id="testimonials">
-          <Testimonials />
-        </section>
         <section id="team">
           <Team />
         </section>
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+        
         <section id="contact">
           <Contact />
         </section>

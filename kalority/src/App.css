@@ -82,6 +82,7 @@ html {
 /* Home Section */
 .home-container {
   display: flex;
+  position: relative;
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
@@ -152,6 +153,29 @@ html {
 .multi-color-button:hover {
   background: #212529;
 }
+/* Image on Top of Text */
+.new-image-container {
+  position: absolute;
+  top: 0;
+  left: 0; /* Aligns the image to the left edge */
+  margin-top: 47px;
+  width: calc(100% + 60px); /* Extend the width to cover left padding */
+  height: 100%;
+  z-index: 1;
+  margin-left: -60px; /* Negative margin to offset the left padding */
+}
+
+.semicircular-illustration {
+  width: 13.5%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ensure text is visible on top */
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+}
 
 /* Services Component Styles */
 .services-container {
@@ -166,7 +190,6 @@ html {
   font-weight: 280;
 }
 
-
 .services-container h1 {
   font-size: 1rem;
   color: #3d88ce;
@@ -175,7 +198,6 @@ html {
   margin-bottom: 10px; 
   
 }
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* wider items */
@@ -194,29 +216,24 @@ html {
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .service-image {
   width: 40%;
   height: 120px;
   object-fit: cover;
 }
-
 .service-text {
   padding: 20px;
 }
-
 .service-text h2 {
   font-size: 1.5rem;
   color: #444;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 .service-text p {
   font-size: 1.05rem;
   line-height: 1.6;
@@ -224,7 +241,6 @@ html {
   color: #888;
   
 }
-
 /* Contact Page Styles */
 .contact-container {
   display: flex;
@@ -234,7 +250,6 @@ html {
   padding: 10rem;
   background: linear-gradient(to right, #6c598f, #604499, #1a518c, #316dad);
 }
-
 .contact-container h2 {
   margin-bottom: 20px;
   text-align: center;
@@ -242,12 +257,10 @@ html {
   color: white;
   font-size: 3rem;
 }
-
 .contact-form {
   width: 100%;
   max-width: 500px;
 }
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -277,12 +290,10 @@ html {
 .bold-text {
   font-weight: bold; /* Makes the text bold */
 }
-
 .contact-form textarea {
   resize: vertical;
   border-radius: 15px;
 }
-
 .submit-button {
   background-color: #64e7c2;
   color: #fff;
@@ -295,7 +306,6 @@ html {
   white-space: nowrap; /* Prevents text from wrapping */
   display: inline-block; /* Allows the button to adjust width based on content */
 }
-
 .submit-button:hover {
   background-color: #72e6ea;
 }
@@ -308,40 +318,34 @@ html {
   color: white; /* White text color */
   font-size: 1.8rem;
 }
-
 .contact-info-number {
   font-weight: bold; /* Makes the number bold */
   color: white; /* White text color */
   font-size: 3rem;
 }
-
 /* Team styles */
 .team-container {
   padding: 50px 20px;
   background-color: transparent;
   text-align: center;
 }
-
 .team-heading {
   font-size: 1rem;
   color: #3571b6;
   margin-bottom: 60px;
   font-weight: bold;
 }
-
 .team-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .team-member-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
 }
-
 .team-image {
   width: 150px;
   height: 150px;
@@ -349,44 +353,35 @@ html {
   border-radius: 50%;
   margin-bottom: 15px;
 }
-
 .team-info {
   margin-bottom: 15px;
 }
-
 .team-info h3 {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  /* font-family: "Courier New", Courier, monospace; */
 }
-
 .team-info p {
   font-size: 1rem;
   color: #777;
 }
-
 .social-links {
   display: flex;
   gap: 15px;
 }
-
 .social-icon {
   font-size: 1.5rem;
   color: #333;
   transition: color 0.3s;
 }
-
 .social-icon:hover {
   color: #007bff;
 }
-
 /* About Us Component Styles */
 .about-us-container {
   padding: 85px 20px;
   background-color: #ffffff;
   /* text-align: center;  */
 }
-
 .about-us-content {
   display: flex;
   /* align-items: center;  */
@@ -394,7 +389,6 @@ html {
   margin: 0 auto;
   justify-content: flex-start;
 }
-
 .about-us-image {
   flex: 1;
   padding-right: 10px; /* Adds space between image and text */
@@ -404,24 +398,20 @@ html {
   transform-style: preserve-3d; /* Ensure 3D transforms are preserved */
   transition: transform 0.1s ease-out;
 }
-
 .about-us-text {
   flex: 1;
   padding-left: 2px; 
   max-width: 500px; 
   text-align: left; 
 }
-
 .about-us-text h2 {
   font-size: 0.9rem; /* Increased font size for heading */
   color: #2b6db4;
   margin-bottom: 20px;
 }
-
 .about-us-additional {
   padding: 10px 0;
 }
-
 .about-us-additional .awesome-things {
   font-size: 2.2rem; 
   font-weight: 500; 
@@ -432,7 +422,6 @@ html {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
-
 .about-us-additional .about-kalority {
   font-size: 1.8rem; 
   margin: 10px 0; 
@@ -440,23 +429,21 @@ html {
   line-height: 1.3;
   color: black;
 }
-
 .about-us-text p {
   color: #888;
   font-weight: 450;
 
 }
-
 .about-us-button {
-  margin-top: 30px; /* Adds space above the button */
-  padding: 16px 40px; /* Adds padding inside the button */
-  font-size: 1rem; /* Sets font size for button text */
-  color: #1a539c; /* Button text color */
-  background-color: #cfdde6; /* Initial button background color */
-  border: none; /* Removes default button border */
-  border-radius: 30px; /* Rounds the button corners */
-  cursor: pointer; /* Shows a pointer cursor on hover */
-  transition: background 0.3s ease; /* Smooth transition for background */
+  margin-top: 30px; 
+  padding: 16px 40px; 
+  font-size: 1rem; 
+  color: #1a539c;
+  background-color: #cfdde6; 
+  border: none; 
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: background 0.3s ease; 
   font-weight: bold;
 }
 
@@ -467,7 +454,8 @@ html {
     #413062,
     #1a518c,
     #316dad
-  ); /* Gradient on hover */
+  ); 
+/* Gradient on hover */
   color: #ffffff;
 }
 
@@ -481,7 +469,6 @@ section {
 section::before,
 section::after {
   content: "";
-  /* display: block; */
   margin: 0;
   padding: 0;
 }

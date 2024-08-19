@@ -4,6 +4,13 @@ import "../App.css";
 const Home = () => {
   return (
     <div id="home" className="home-container home-background">
+      <div className="new-image-container">
+        <img
+          src="/images/shape_1.png" 
+          alt="Semicircular Illustration"
+          className="semicircular-illustration"
+        />
+      </div>
       <div className="content-wrapper">
         <h2>Social Media Marketing is the Best Ever</h2>
         <div className="additional-content">
@@ -19,7 +26,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/home image.png"
+          src="/images/home image.png" // Your existing image
           alt="Illustration"
           className="illustration"
         />

@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div id="home" className="home-container home-background">
       <div className="content-wrapper">
-        <h2>Welcome to Kalority</h2>
+        <h2>Social Media Marketing is the Best Ever</h2>
         <div className="additional-content">
           <p>
             Where innovation meets excellence in software-driven solutions. We

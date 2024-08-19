@@ -5,7 +5,7 @@ const Testimonials = () => {
   const scrollRef = useRef(null);
   const [activeDot, setActiveDot] = useState(0);
   const cardWidth = 300;
-  const scrollDelay = 5000; // Scroll delay in milliseconds
+  const scrollDelay = 1000; // Scroll delay in milliseconds
 
   useEffect(() => {
     const handleScroll = () => {

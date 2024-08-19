@@ -5,10 +5,11 @@ const OurProjects = () => {
   return (
     <section id="our-projects" className="our-projects">
       <h2>OUR PROJECTS</h2>
-      <p className="no-margin" style={{ fontWeight: "bold" }}>
+      <p className="no-margin" style={{ fontWeight: "700" }}>
         We've Done Lot's Of Work
       </p>
-      <p className="no-margin">Check some from here</p>
+      <p className="no-margin" style={{ fontWeight: "280"}}>
+        Check some from here</p>
 
       <div className="projects-grid">
         <div className="project-card">
@@ -22,7 +23,8 @@ const OurProjects = () => {
               Digital Marketing <span className="project-type">Project</span>
             </h3>
           </a>
-          <p>
+          
+          <p className="project-p">
             Redfin perch tripod fish zebra lionfish, nase slickhead! Jewelfish
             angler Devario gray reef shark.
           </p>

@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <h1>OUR SERVICES</h1>
-      <p className="services-description">
+      <p className="services-description-strong">
         <strong>What We</strong> can do for you
       </p>
       <div className="services-grid">

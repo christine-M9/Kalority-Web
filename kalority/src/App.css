@@ -42,10 +42,8 @@ body {
 
 .company-name {
   text-decoration: none;
-  color: #403d3d; /* Link text color */
-  font-size: 2.5rem;
-  font-weight: bold;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-size: 1.9rem;
+  font-weight: 700;
 }
 
 .navbar-nav {
@@ -152,7 +150,7 @@ html {
 }
 
 .multi-color-button:hover {
-  background: linear-gradient(to right, #0056b3, #5a3ec8, #0056b3, #5a3ec8);
+  background: #212529;
 }
 
 /* Services Component Styles */
@@ -384,7 +382,7 @@ html {
 
 /* About Us Component Styles */
 .about-us-container {
-  padding: 150px 20px;
+  padding: 85px 20px;
   background-color: #ffffff;
   /* text-align: center;  */
 }
@@ -483,7 +481,7 @@ section {
 section::before,
 section::after {
   content: "";
-  display: block;
+  /* display: block; */
   margin: 0;
   padding: 0;
 }
@@ -519,7 +517,7 @@ section::after {
   display: flex;
   justify-content: flex-start; /* Aligns images to the left */
   align-items: center;
-  margin-top: 150px; /* Adjust the spacing as needed */
+  margin-top: 100px; 
   padding: 0 30px; /* Adds space on the left and right */
 }
 
@@ -528,7 +526,7 @@ section::after {
   width: 100px;
   height: auto;
   margin: 0 55px; /* Space between images */
-  border-radius: 8px; /* Optional: Adds rounded corners */
+  border-radius: 8px; /* Optional: rounded corners*/
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.2; 
 }
@@ -544,7 +542,7 @@ section::after {
   justify-content: space-between;
   align-items: flex-start;
   padding: 90px 40px;
-  background-color: #303e41; /* Background color */
+  background-color: #303e41; 
   color: white;
   width: 100%;
   box-sizing: border-box; /* Ensure padding doesn't add extra width */

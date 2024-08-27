@@ -6,7 +6,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <a href="#home" className="company-name navbar-text">
-          Kalority
+          <img
+            src="./images/300x300 Logo.png" 
+            alt="Kalority Logo"
+            className="navbar-logo"
+          />
+          KALORITY
         </a>
       </div>
       <ul className="navbar-nav">
@@ -31,16 +36,10 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#team" className="nav-link navbar-text">
-            Team
-          </a>
-        </li>
-        <li className="nav-item">
           <a href="#testimonials" className="nav-link navbar-text">
             Testimonials
           </a>
         </li>
-        
         <li className="nav-item">
           <a href="#contact" className="nav-link navbar-text">
             Contact
@@ -48,15 +47,6 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="navbar-right">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a href="#signin" className="nav-link navbar-text">
-              Sign In
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
   );
 };

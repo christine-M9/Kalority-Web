@@ -6,7 +6,7 @@ const Home = () => {
     <div id="home" className="home-container home-background">
       <div className="new-image-container">
         <img
-          src="/images/shape_1.png" 
+          src="/images/Circle_Seal-brown_Solid.svg.png" 
           alt="Semicircular Illustration"
           className="semicircular-illustration"
         />

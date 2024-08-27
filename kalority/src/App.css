@@ -1,3 +1,11 @@
+.navbar-logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 8px; /* Add some space between the logo and the company name */
+  vertical-align: middle; /* Aligns the logo with the text vertically */
+  left: 20px;
+}
+
 
 body {
   font-family: "Montserrat";
@@ -10,18 +18,19 @@ body {
   align-items: center;
   padding: 10px 20px;
   position: absolute; /* Positioned at the top of the homepage */
-  top: 0;
+  top: 20;
   left: 0;
   right: 0;
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s, position 0.3s; /* Smooth transition */
   z-index: 1000; /* Ensures it stays above other content */
+
 }
 
 /* Navbar for other pages */
 .navbar.sticky {
-  position: fixed; /* Stick to the top of the viewport */
-  background-color: #ffffff; /* Solid background when scrolled */
+  position: fixed; 
+  background-color: #ffffff; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
   opacity: 1; /* Fully opaque */
 }
@@ -31,19 +40,23 @@ body {
   font-size: 1rem;
   color: #403d3d;
   text-align: center;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
 }
 
 /* Navbar Links */
 .navbar-left {
   display: flex;
   align-items: center;
+  font-weight: 400;
+
 }
 
 .company-name {
   text-decoration: none;
-  font-size: 1.9rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 10px;
+  font-family: 'Montserrat-Alt1', sans-serif;
+  color: #532031;
 }
 
 .navbar-nav {
@@ -60,9 +73,8 @@ body {
   text-decoration: none;
   color: rgb(48, 44, 44);
   padding: 10px 15px;
-  font-weight: bold;
-  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif; */
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .nav-link:hover,
@@ -99,10 +111,11 @@ html {
 .home-container h2 {
   font-size: 4.2rem;
   margin-bottom: 10px; /* Add margin between h2 and p */
-  font-weight: 280;
+  font-weight: 80;
   color: #333;;
   line-height: 1.2;
   letter-spacing: -.05em;
+  font-family: Quicksand, sans-serif;
 }
 
 .additional-content p {
@@ -137,10 +150,10 @@ html {
 .multi-color-button {
   background: linear-gradient(
     to right,
-    #6c598f,
-    #413062,
-    #1a518c,
-    #316dad);
+    #4e3a40,
+    #6e3447,
+    #532031,
+    #532031);
   color: #fff;
   border: none;
   padding: 22px 50px;
@@ -158,17 +171,18 @@ html {
   position: absolute;
   top: 0;
   left: 0; /* Aligns the image to the left edge */
-  margin-top: 47px;
-  width: calc(100% + 60px); /* Extend the width to cover left padding */
+  margin-top: 80px;
+  width: calc(150% + 550px); /* Extend the width to cover left padding */
   height: 100%;
   z-index: 1;
-  margin-left: -60px; /* Negative margin to offset the left padding */
+  margin-left: -200px;
 }
 
 .semicircular-illustration {
   width: 13.5%;
   height: auto;
   object-fit: cover;
+  
 }
 
 /* Ensure text is visible on top */
@@ -248,7 +262,7 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 10rem;
-  background: linear-gradient(to right, #6c598f, #604499, #1a518c, #316dad);
+  background: linear-gradient(to right, #4e3a40, #4a2934, #532031, #532031);
 }
 .contact-container h2 {
   margin-bottom: 20px;
@@ -405,7 +419,7 @@ html {
   text-align: left; 
 }
 .about-us-text h2 {
-  font-size: 0.9rem; /* Increased font size for heading */
+  font-size: 0.9rem; 
   color: #2b6db4;
   margin-bottom: 20px;
 }
@@ -414,12 +428,10 @@ html {
 }
 .about-us-additional .awesome-things {
   font-size: 2.2rem; 
-  font-weight: 500; 
+  font-weight: 700; 
   margin: 10px 0; 
   line-height: 0.8;
-  word-break: break-word;
-  color: rgb(35, 33, 33);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(60, 57, 57);
   
 }
 .about-us-additional .about-kalority {
@@ -450,11 +462,10 @@ html {
 .about-us-button:hover {
   background: linear-gradient(
     to right,
-    #6c598f,
-    #413062,
-    #1a518c,
-    #316dad
-  ); 
+    #4e3a40,
+    #6e3447,
+    #532031,
+    #532031);
 /* Gradient on hover */
   color: #ffffff;
 }
@@ -752,11 +763,10 @@ p {
 .feature-button:hover {
   background: linear-gradient(
     to right,
-    #6c598f,
-    #413062,
-    #1a518c,
-    #316dad
-  ); /* Gradient on hover */
+    #4e3a40,
+    #6e3447,
+    #532031,
+    #532031); /* Gradient on hover */
   color: #ffffff;
 }
 .testimonials {

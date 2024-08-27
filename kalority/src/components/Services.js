@@ -11,7 +11,7 @@ const Services = () => {
       <div className="services-grid">
         <div className="service-item">
           <img
-            src="/images/smartphone_9204617.png"
+            src="/images/imagee1.png"
             alt="Software Development"
             className="service-image"
           />
@@ -27,7 +27,7 @@ const Services = () => {
         </div>
         <div className="service-item">
           <img
-            src="/images/smartphone_9204617.png"
+            src="/images/imagee2.png"
             alt="Investment Ventures"
             className="service-image"
           />
@@ -43,7 +43,7 @@ const Services = () => {
         </div>
         <div className="service-item">
           <img
-            src="/images/smartphone_9204617.png"
+            src="/images/imagee1.png"
             alt="VSLA Partners"
             className="service-image"
           />
@@ -60,7 +60,7 @@ const Services = () => {
         </div>
         <div className="service-item">
           <img
-            src="/images/smartphone_9204617.png"
+            src="/images/imagee2.png"
             alt="Furniture Business"
             className="service-image"
           />
@@ -75,7 +75,7 @@ const Services = () => {
         </div>
         <div className="service-item">
           <img
-            src="/images/smartphone_9204617.png"
+            src="/images/imagee1.png"
             alt="Agriculture Projects"
             className="service-image"
           />

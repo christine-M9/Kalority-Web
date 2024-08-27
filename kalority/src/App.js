@@ -6,7 +6,6 @@ import Services from "./components/Services";
 import Features from "./components/Features";
 import OurProjects from "./components/OurProjects";
 import Testimonials from "./components/Testimonials";
-import Team from "./components/TeamSection";
 import Contact from "./components/ContactPage";
 import "./App.css";
 
@@ -71,9 +70,6 @@ const App = () => {
         </section>
         <section id="our-projects">
           <OurProjects />
-        </section>
-        <section id="team">
-          <Team />
         </section>
         <section id="testimonials">
           <Testimonials />

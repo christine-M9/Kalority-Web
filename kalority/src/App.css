@@ -27,14 +27,16 @@ body {
 
 }
 
-/* Navbar for other pages */
 .navbar.sticky {
-  position: fixed; 
-  background-color: #ffffff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  opacity: 1; /* Fully opaque */
-
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; /* stay above other content */
+  transition: top 0.3s; /* Smooth transition for sticky effect */
 }
+
 
 /* Navbar Text Style on Homepage */
 .navbar-text {

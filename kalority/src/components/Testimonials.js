@@ -15,10 +15,15 @@ const Testimonials = () => {
 
         // Based on current scroll position
         setActiveDot(currentIndex % 5);
+
+        // If we reach the end of the original testimonials, jump back to the start
+        if (scrollLeft >= scrollRef.current.scrollWidth / 2) {
+          scrollRef.current.scrollLeft = scrollLeft % (scrollRef.current.scrollWidth / 2);
+        }
       }
     };
 
-    const currentRef = scrollRef.current; // Copy ref to avoid issues in cleanup
+    const currentRef = scrollRef.current;
     currentRef.addEventListener("scroll", handleScroll);
 
     return () => currentRef.removeEventListener("scroll", handleScroll);

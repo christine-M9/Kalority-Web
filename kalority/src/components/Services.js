@@ -2,6 +2,25 @@ import React from "react";
 import "../App.css";
 
 const Services = () => {
+  // Function to handle mouse move
+  const handleMouseMove = (e) => {
+    const item = e.currentTarget;
+    const { clientWidth: width, clientHeight: height } = item;
+    const { clientX: x, clientY: y } = e;
+    const { left, top } = item.getBoundingClientRect();
+
+    const centerX = (x - left - width / 2) / width * 2;
+    const centerY = (y - top - height / 2) / height * 2;
+
+    item.style.transform = `rotateY(${centerX * 35}deg) rotateX(${-centerY * 35}deg)`;
+  };
+
+  // Function to handle mouse leave
+  const handleMouseLeave = (e) => {
+    const item = e.currentTarget;
+    item.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  };
+
   return (
     <div className="services-container">
       <h1>OUR SERVICES</h1>
@@ -9,7 +28,11 @@ const Services = () => {
         <strong>What We</strong> can do for you
       </p>
       <div className="services-grid">
-        <div className="service-item">
+        <div
+          className="service-item"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img
             src="/images/imagee1.png"
             alt="Software Development"
@@ -25,7 +48,11 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className="service-item"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img
             src="/images/imagee2.png"
             alt="Investment Ventures"
@@ -41,7 +68,11 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className="service-item"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img
             src="/images/imagee1.png"
             alt="VSLA Partners"
@@ -58,7 +89,11 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className="service-item"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img
             src="/images/imagee2.png"
             alt="Furniture Business"
@@ -73,7 +108,11 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className="service-item"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img
             src="/images/imagee1.png"
             alt="Agriculture Projects"

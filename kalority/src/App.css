@@ -171,24 +171,30 @@ html {
 .multi-color-button:hover {
   background: #212529;
 }
-/* Image on Top of Text */
+/* Semicircular Illustration */
+.semicircular-illustration {
+  width: 100px;
+  height: 200px;
+  background-color: #532031;
+  border-radius: 0 100px 100px 0; 
+  position: relative;
+  left: 0; /* Aligns the semicircle to the left edge */
+  transform: translateX(-42%); /* Positions it correctly on the left side */
+  z-index: 1;
+  top: 70px;
+}
+
+/* Container for the Semicircle */
 .new-image-container {
   position: absolute;
   top: 0;
-  left: 0; /* Aligns the image to the left edge */
+  left: 0; /* Aligns the container to the left edge */
   margin-top: 80px;
-  width: calc(150% + 550px); /* Extend the width to cover left padding */
-  height: 100%;
+  width: 100px; /* Adjust width to fit the semicircle */
+  height: 200px; /* Adjust height to fit the semicircle */
   z-index: 1;
-  margin-left: -200px;
 }
 
-.semicircular-illustration {
-  width: 13.5%;
-  height: auto;
-  object-fit: cover;
-  
-}
 
 /* Ensure text is visible on top */
 .content-wrapper {

@@ -26,7 +26,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src="/images/home image.png" // Your existing image
+          src="/images/home image.png" 
           alt="Illustration"
           className="illustration"
         />

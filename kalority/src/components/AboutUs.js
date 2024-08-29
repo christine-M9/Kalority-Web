@@ -53,14 +53,6 @@ const AboutUs = () => {
           <button className="about-us-button">More About</button>
         </div>
       </div>
-
-      <div className="about-us-images">
-        <img src="/images/ss1.png" alt="workspace" className="about-us-extra-image" />
-        <img src="/images/ss2.png" alt="Team" className="about-us-extra-image" />
-        <img src="/images/ss3.png" alt="Kalority" className="about-us-extra-image" />
-        <img src="/images/ss4.png" alt="Event" className="about-us-extra-image" />
-        <img src="/images/ss5.png" alt="Tech" className="about-us-extra-image" />
-      </div>
     </div>
   );
 };

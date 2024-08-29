@@ -107,16 +107,18 @@ html {
 .content-wrapper {
   max-width: 500px;
   text-align: left;
+  /* font-family: Quicksand, sans-serif;
+  font-weight: 100; */
 }
 
 .home-container h2 {
   font-size: 4.2rem;
   margin-bottom: 10px; /* Add margin between h2 and p */
-  font-weight: 80;
-  color: #333;;
+  font-weight: 10;
+  color: black;
   line-height: 1.2;
   letter-spacing: -.05em;
-  font-family: Quicksand, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .additional-content p {
@@ -135,8 +137,8 @@ html {
   transform-origin: center; /* Rotate around the center */
   transition: transform 0.3s ease; /* Smooth transition effect */
   overflow: hidden;
-  width: 80%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .illustration {
@@ -195,7 +197,8 @@ html {
 /* Services Component Styles */
 .services-container {
   padding: 60px 20px;
-  background-color: #ffffff; /* Same background color as Home and About Us */
+  background-color: #ffffff; 
+  margin-top: -40px;
 }
 .services-description-strong {
   font-size: 2rem;
@@ -338,62 +341,10 @@ html {
   color: white; /* White text color */
   font-size: 3rem;
 }
-/* Team styles */
-.team-container {
-  padding: 50px 20px;
-  background-color: transparent;
-  text-align: center;
-}
-.team-heading {
-  font-size: 1rem;
-  color: #3571b6;
-  margin-bottom: 60px;
-  font-weight: bold;
-}
-.team-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.team-member-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-.team-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-.team-info {
-  margin-bottom: 15px;
-}
-.team-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-.team-info p {
-  font-size: 1rem;
-  color: #777;
-}
-.social-links {
-  display: flex;
-  gap: 15px;
-}
-.social-icon {
-  font-size: 1.5rem;
-  color: #333;
-  transition: color 0.3s;
-}
-.social-icon:hover {
-  color: #007bff;
-}
+
 /* About Us Component Styles */
 .about-us-container {
-  padding: 85px 20px;
+  padding: 205px 20px;
   background-color: #ffffff;
   /* text-align: center;  */
 }
@@ -690,6 +641,7 @@ section::after {
   height: 100vh; /* Full viewport height */
   background-color: #ffffff;
   padding: 65px; 
+  margin-top: 60px;
   margin-left: 0px; 
 }
 
@@ -713,8 +665,8 @@ section::after {
   position: absolute; /* Position image absolutely within container */
   top: 0;
   right: 0;
-  width: 107%; /* Adjust width as needed */
-  height: 86%; /* Adjust height as needed */
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
   object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
   transform-style: preserve-3d; /* Ensure 3D transforms are preserved */
   transition: transform 0.1s ease-out;
@@ -807,21 +759,27 @@ p {
 
 .testimonials-header h2 {
   font-size: 2.2rem;
-  color: black;
   margin-bottom: 2px; /* Space below h2 */
+  line-height: 1.2;
+  font-weight: 750;
+  font-family: Quicksand, sans-serif;
+  color: #333;
+  letter-spacing: -.05em;
 }
 
 .testimonials-header h3 {
   font-size: 2.2rem;
-  font-weight: lighter;
+  font-weight: 280;
+  color: rgb(52, 51, 51);
 }
 
 .testimonials-description {
   font-size: 1rem;
-  color: #333; /* To be adjusted */
+  color: grey;
   margin-left: 20px; /* Space between h2 and the paragraph */
   max-width: 550px;
   margin-left: 300px;
+  font-weight: 450;
 }
 
 .testimonials-grid {

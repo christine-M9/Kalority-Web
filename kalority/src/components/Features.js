@@ -54,7 +54,7 @@ const Features = () => {
         </div>
       </div>
       <div className="image-section">
-        <img src="./images/feat img1.png" alt="Optimization" />
+        <img src="./images/feat image3.png" alt="Optimization" />
       </div>
     </div>
   );

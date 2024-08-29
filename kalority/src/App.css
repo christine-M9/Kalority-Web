@@ -58,7 +58,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   margin-left: 10px;
-  font-family: 'Montserrat-Alt1', sans-serif;
+  font-family: Montserrat-Alt1, sans-serif;
   color: #532031;
 }
 
@@ -109,18 +109,18 @@ html {
 .content-wrapper {
   max-width: 500px;
   text-align: left;
-  /* font-family: Quicksand, sans-serif;
-  font-weight: 100; */
+  font-weight: 100; 
+ 
 }
 
 .home-container h2 {
   font-size: 4.2rem;
   margin-bottom: 10px; /* Add margin between h2 and p */
-  font-weight: 10;
-  color: black;
+  font-weight: 250;
   line-height: 1.2;
   letter-spacing: -.05em;
-  font-family: 'Quicksand', sans-serif;
+  color: black;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
 .additional-content p {
